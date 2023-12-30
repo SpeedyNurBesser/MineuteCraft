@@ -1,3 +1,7 @@
+## First Join Detection
+execute as @a[tag=!speedyonlybetter.mineutecraft.init] run tag @s add speedyonlybetter.mineutecraft.timed
+tag @a[tag=!speedyonlybetter.mineutecraft.init] add speedyonlybetter.mineutecraft.init
+
 ## Join Detection
 execute as @a[scores={speedyonlybetter.mineutecraft.joinGame = 1..}] run tag @s add speedyonlybetter.mineutecraft.timed
 scoreboard players reset @a[scores={speedyonlybetter.mineutecraft.joinGame = 1..}] speedyonlybetter.mineutecraft.joinGame
