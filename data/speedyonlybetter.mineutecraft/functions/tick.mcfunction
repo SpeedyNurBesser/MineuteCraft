@@ -16,10 +16,7 @@ scoreboard players add @a[tag=speedyonlybetter.mineutecraft.timed] speedyonlybet
 # We now know that the player will after one second have a timer score of 20.
 
 ## StartCountdown
-effect give @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1..100}] blindness infinite 255 true
-effect give @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1..100}] slowness infinite 255 true
-effect give @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1..100}] jump_boost infinite 128 true
-effect give @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1..100}] mining_fatigue infinite 255 true
+execute as @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1..100}] run function speedyonlybetter.mineutecraft:effects
 
 title @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=1}] title "5"
 title @a[tag=speedyonlybetter.mineutecraft.timed, scores={speedyonlybetter.mineutecraft.timer=21}] title "4"
